@@ -8,3 +8,9 @@ Thumbs.db
 
 # Ticket 4 asks you to add two more entries here, with a comment above each
 # saying why. Read the ones above first: each says WHY, not just WHAT.
+
+# Do not ship the dependency
+node_modules/
+
+# Environment files may contain API keys and secrets — never commit these
+.env
