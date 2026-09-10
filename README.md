@@ -17,6 +17,7 @@ If that prints a version, you are ready.
 git config --global user.name "Your Name"
 git config --global user.email "the-email-you-use-for-github@example.com"
 ```
+The `.gitignore` file is to ingore file that might content sensetive information or dependencies.
 
 Use the same email as your GitHub account, or your commits will not be linked to you.
 
