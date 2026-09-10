@@ -12,5 +12,5 @@ Thumbs.db
 # Do not ship the dependency
 node_modules/
 
-# Do not ship environment variable might content sensitive information
+# Environment files may contain API keys and secrets — never commit these
 .env

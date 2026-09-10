@@ -17,8 +17,6 @@ If that prints a version, you are ready.
 git config --global user.name "Your Name"
 git config --global user.email "the-email-you-use-for-github@example.com"
 ```
-The `.gitignore` file is to ingore file that might content sensetive information or dependencies.
-
 Use the same email as your GitHub account, or your commits will not be linked to you.
 
 ## Where the work is
@@ -67,3 +65,13 @@ the exercise for you.
 
 (If you are an engineer auditing the templates: this is not the thin-template gap that DZ-382
 fixed elsewhere. It is a decision, recorded here so it does not get "fixed".)
+
+## What does not belong in this repository
+
+`.gitignore` tells git which files to never track — things like OS junk, editor settings,
+installed dependencies, or local `.env` files, so they don't get added by accident and don't
+clutter every commit.
+
+Secrets are a special case: if one is ever committed, adding it to `.gitignore` and deleting it
+afterward does not remove it — it is still sitting in the repository's git history, readable by
+anyone who checks out an old commit. A leaked secret has to be revoked/rotated, not just deleted.
